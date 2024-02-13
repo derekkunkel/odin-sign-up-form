@@ -23,10 +23,10 @@
     <div class="form-container">
         
         <div class="form-container-top">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <span class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris</span>
-            <span>You *know* you want to!</span>
+            <span class="welcome-text">You *know* you want to!</span>
         </div>
             
         <div class="form-container-mid">
@@ -48,7 +48,9 @@
 
                 <div class="form-div">
                     <label for="phone_number">Phone Number:</label>
-                    <input type="text" name="phone_number" id="phone_number">
+                    <input type="tel" name="phone" id="phone_number"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890"
+                    required>
                 </div>
                 
                 <div class="form-div">

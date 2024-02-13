@@ -14,7 +14,7 @@ html, body {
 /* Splash Container Elements */
 
 .splash-container {
-    width: 50%;
+    min-width: 35%;
     height: 100%;
     overflow: hidden;
     background-color: gr;
@@ -43,25 +43,24 @@ html, body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4%;
+    gap: 6%;
 
     width: 100%;
     background: black;
     opacity: 0.7;
     color: white;
-    height: 6em;
+    height: 8em;
     max-height: 8em;
   }
 
 .logo {
-    bottom: 2px;
     height: 90%;
     max-height: 100%;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .logo-text {
-    font-size: 3em;
+    font-size: 4em;
     font-family: cuneiform;
 }
 
@@ -84,7 +83,17 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: 12%;
+
+    padding: 2em;
+    gap: 10%;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.welcome-text {
+    width: 70%;
 }
 
 .form-container-mid {
@@ -118,10 +127,17 @@ input {
     border-radius: 6px;
     border: 2px solid #eee;
     padding: 6px;
+    font-weight: bold;
 }
 
 input:hover {
     background-color: rgb(237, 237, 237);
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid #096ebc;
+    box-shadow: 0px 0px 6px rgb(237, 237, 237);
 }
 
 
@@ -150,7 +166,7 @@ input:hover {
 
 .submit-form-button:hover {
     background: #0182e4;
-    }
+}
 
 .form-button-text {
     margin: 1.25em;
@@ -159,4 +175,8 @@ input:hover {
 .log-in-text {
     color: #0182e4;
     text-decoration: none;
+}
+
+.log-in-text:hover {
+    color: #5fa4d8;
 }
